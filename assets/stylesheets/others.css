@@ -1,0 +1,11 @@
+/* SELECTIONS */
+
+::-moz-selection {
+    color: white; 
+    background: rgb(41, 9, 22);
+}
+
+::selection {
+    color: white; 
+    background: rgb(41, 9, 22);
+}
