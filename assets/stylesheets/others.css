@@ -9,3 +9,17 @@
     color: white; 
     background: rgb(41, 9, 22);
 }
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 1px;
+}
+::-webkit-scrollbar-track {
+    background: black; 
+}
+::-webkit-scrollbar-thumb {
+    background: white; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
