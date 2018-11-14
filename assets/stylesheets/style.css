@@ -33,6 +33,23 @@ html, body{
 .borderless{
     border: none!important;
 }
+.heading{
+    font-family: "pn-bold";
+    font-size: 70px;
+}
+.subtitle{
+    font-family: "pn-bold";
+    font-size: 30px;
+}
+
+@media screen and (max-width: 650px){
+    #about .heading{
+        font-size: 50px;
+    }
+    #about .subtitle{
+        font-size: 20px;
+    }
+}
 
 /* NAVBAR */
 
@@ -286,14 +303,6 @@ html, body{
 
 /* ABOUT */
 
-#about .heading{
-    font-family: "pn-bold";
-    font-size: 70px;
-}
-#about .subtitle{
-    font-family: "pn-bold";
-    font-size: 30px;
-}
 #about .text{
     font-family: "Montserrat", sans-serif;
     margin-top: 5vh;
@@ -351,10 +360,7 @@ html, body{
     position: relative;
     height: 50%; width: 45%;
     display: inline-block;
-    margin: 1vh;
-}
-#about-three .start .box img{
-    height: 100%; width: 100%;
+    margin: 2vh;
 }
 #about-three .start .box .image-one{
     position: absolute;
@@ -363,6 +369,7 @@ html, body{
     background-position: top;
     background-repeat: no-repeat;
     height: 50vh; width: 100%;
+    border-radius: 10px;
 }
 #about-three .start .box .image-two{
     position: absolute;
@@ -371,18 +378,19 @@ html, body{
     background-position: bottom;
     background-repeat: no-repeat;
     height: 50vh; width: 100%;
+    border-radius: 10px;
 }
 #about-three .start .box .text{
     position: relative;
-    font-family: "Monsterrat", sans-serif;
-    padding: 7vh 5vh;
 }
 #about-three .start .box .text-in{
+    font-family: "Monsterrat", sans-serif;
     font-size: 25px;
     font-weight: 600;
     text-align: left;
 }
 #about-three .start .box .end{
+    font-family: "pn-regular";
     font-size: 20px;
     text-align: right;
 }
@@ -399,12 +407,6 @@ html, body{
     #about-one, #about-two, #about-three{
         padding: 20vh 5vh;
     }
-    #about .heading{
-        font-size: 50px;
-    }
-    #about .subtitle{
-        font-size: 20px;
-    }
     #about .text{
         width: 100%;
     }
@@ -419,4 +421,33 @@ html, body{
         font-size: 15px;
         text-align: left;
     }
+}
+
+/* PORTFOLIO */
+
+#portfolio{
+    background-color: #0f0f0f;
+    padding: 20vh 15vh;
+}
+#portfolio .start{
+    margin-top: 10vh;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+#portfolio .start .work{
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgba(252, 252, 252, 0.05);
+    width: 45%;
+    margin: 2vh;
+    padding: 2vh;
+}
+#portfolio .start .work:nth-of-type(2n){
+    margin-top: 10vh;
+}
+#portfolio .start .work img{
+    width: 100%;
+    position: relative;
 }
