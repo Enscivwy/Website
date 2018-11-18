@@ -43,10 +43,11 @@ html, body{
 }
 
 @media screen and (max-width: 650px){
-    #about .heading{
+    .heading{
         font-size: 50px;
+        line-height: 50px;
     }
-    #about .subtitle{
+    .subtitle{
         font-size: 20px;
     }
 }
@@ -432,22 +433,56 @@ html, body{
 #portfolio .start{
     margin-top: 10vh;
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 #portfolio .start .work{
-    display: block;
-    position: relative;
+    width: 50%;
+}
+#portfolio .start .work .bg{
     border-radius: 10px;
     background-color: rgba(252, 252, 252, 0.05);
-    width: 45%;
+    padding: 1.5vh;
     margin: 2vh;
-    padding: 2vh;
-}
-#portfolio .start .work:nth-of-type(2n){
-    margin-top: 10vh;
 }
 #portfolio .start .work img{
     width: 100%;
-    position: relative;
+    -webkit-transition: width 1.5s;
+}
+#portfolio .start .work img:hover{
+    width: 105%;
+
+    -webkit-transition: width 1.5s;
+}
+@media screen and (max-width: 1024px){
+    #portfolio{
+        padding: 20vh 10vh; 
+    }
+}
+@media screen and (max-width: 650px){
+    #portfolio{
+        padding: 20vh 5vh;
+    }
+    #portfolio .start .work{
+        width: 90%;
+        padding: 1.5vh;
+    }
+}
+
+/* PRE FOOTER */
+
+.pre-footer{
+   padding: 15vh 15vh; 
+   background-color: #111111;
+}
+
+@media screen and (max-width: 1024px){
+    #pre-footer{
+        padding: 15vh 10vh; 
+    }
+}
+@media screen and (max-width: 650px){
+    #pre-footer{
+        padding: 15vh 5vh;
+    }
 }
