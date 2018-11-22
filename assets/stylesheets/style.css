@@ -327,27 +327,22 @@ html, body{
     border: 1px solid rgb(182, 182, 182);
     height: 25%; width: 25%;
     display: inline-block;
-    margin: -2px;
-    margin-top: 1px;
+    margin: 5px;
+    margin-top: 9px;
+    border-radius: 10px;
 }
 #about-two .box img{
     height: 100%; width: 100%;
     position: relative;
     z-index: inherit;
 }
-#about-two .textbox{
-    height: 25%;
-    width: 25%;
-    display: inline-block;
-    margin: -2px;
-    margin-top: 1px;
-}
-#about-two .textbox .company{
+#about-two .company{
+    text-align: right;
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
     position: relative;
-    left: 2vh;
-    bottom: 5vh;
+    right: 2vh;
+    bottom: 2vh;
 }
 
 #about-three{
@@ -447,12 +442,15 @@ html, body{
 }
 #portfolio .start .work img{
     width: 100%;
-    -webkit-transition: width 1.5s;
+    transition: transform 1.5s;
+    -webkit-transition: transform 1.5s;
 }
 #portfolio .start .work img:hover{
-    width: 105%;
-
-    -webkit-transition: width 1.5s;
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transition: transform 1.5s;
+    -webkit-transition: transform 1.5s;
 }
 @media screen and (max-width: 1024px){
     #portfolio{
